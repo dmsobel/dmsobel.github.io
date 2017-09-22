@@ -230,8 +230,29 @@ textarea {
   font-family: sans-serif;
   background-color: aquamarine; 
   border-color: azure;
-
 }
+
+input[type="date"] {
+     /*-webkit-align-items: center;
+     display: -webkit-inline-flex;*/
+     font-family: monospace;
+     background-color: aliceblue;
+     overflow: hidden;
+     padding: 0;
+     width: 200px;
+     -webkit-padding-start: 1px;
+}
+
+input[type="email"]{
+    font-family: monospace;
+    background-color: aliceblue;
+}
+
+input[type="tel"]{
+    font-family: monospace;
+    background-color: aliceblue;
+}
+    
 input {
   display: block;
   border-color: azure;
@@ -257,6 +278,8 @@ div {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: azure;
+    border-radius: 2%;
+    border-color: black;
 }
 
 h5 {
