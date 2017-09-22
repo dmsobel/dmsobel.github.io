@@ -253,6 +253,14 @@ input[type="tel"]{
     background-color: aliceblue;
 }
     
+input[id="fname"]{
+    background-color: aliceblue
+}
+
+input[id="lname"]{
+    background-color: aliceblue
+} 
+
 input {
   display: block;
   border-color: azure;
@@ -272,7 +280,7 @@ label {
 
 div {
     display: inline-block;
-    padding: 20px;
+    padding: 30px;
     position: fixed;
     top: 50%;
     left: 50%;
