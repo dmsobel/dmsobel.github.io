@@ -255,13 +255,17 @@ input[type="email"], input[type="name"]{
     background-color: aliceblue;
     color: blue;
     border:none;
+    max-width: 100%;
+}
+
+div {
+    position: fixed;
     width: 100%;
 }
     
 input {
   display: block;
   border:none;
-  border-radius: 5px;
   max-width: 100%;
 }
 
