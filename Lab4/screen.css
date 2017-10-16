@@ -241,7 +241,6 @@ body {
   margin-right: auto;
   vertical-align: baseline;
   width: 50%;
-  margin-top: 12%;
   font-family: 'Roboto', sans-serif;
   background-color: aliceblue;
   border: none;
@@ -250,7 +249,7 @@ body {
 
 #subdiv {
     display: block;
-    
+    margin-bottom: 10%;
     width: 100%;
 }
 
