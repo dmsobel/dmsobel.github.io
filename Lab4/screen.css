@@ -262,12 +262,9 @@ input {
   display: block;
   border:none;
   border-radius: 5px;
+  max-width: 100%;
 }
 
-input[type="checkbox"] {
-    text-align: left;
-    
-}
 
 label {
   display: block;
