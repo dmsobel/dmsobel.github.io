@@ -73,22 +73,6 @@ placeholder{
   padding: 8px;
 }
 
-button 
-  {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}  
-
 
 /**
  * Show the overflow in IE.
@@ -153,6 +137,7 @@ button:-moz-focusring,
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+
 }
 
 /**
@@ -240,7 +225,13 @@ textarea {
 
 /* David Sobel */
 
-
+body {
+    background-color: lightgray;
+    align-content: center;
+}
+div {
+ align-content: center;
+}
 [type="submit"]{
  margin-left: auto;
   margin-right: auto;
@@ -264,12 +255,17 @@ input[type="email"], input[type="name"]{
     background-color: aliceblue;
     color: blue;
     border:none;
+    width: 100%;
 }
     
 input {
   display: block;
   border:none;
   border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    text-align: left;
 }
 
 label {
@@ -281,19 +277,6 @@ label {
   padding-bottom: inherit;
 }
 
-div {
-    align-content: inherit;
-    display: inline-block;
-    padding: 8%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: lightgray;
-    border-radius: 2%;
-    border-color: black;
-}
-
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -303,6 +286,7 @@ h5 {
 
 form {
     display: inline-block;
+    
     }
 @media (max-width:280px){
     div {
