@@ -263,6 +263,10 @@ body {
     background-color: lightgray;
 }
 
+#mainformdiv {
+    width: auto;
+}
+
 input[type="email"], input[type="name"]{
     font-family: 'Roboto', sans-serif;
     background-color: aliceblue;
