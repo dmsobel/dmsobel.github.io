@@ -237,10 +237,9 @@ body {
 }
 
 [type="submit"]{
- margin-left: auto;
+ margin-left: 25%;
   margin-right: auto;
-  align-content: center;
-  position: sticky;
+  vertical-align: baseline;
   width: 50%;
   margin-top: 12%;
   font-family: 'Roboto', sans-serif;
@@ -274,8 +273,7 @@ input[type="email"], input[type="name"]{
     border:none;
     max-width: 100%;
     width: 100%;
-    
-      display: block;
+    display: block;
 }
 
 
@@ -297,7 +295,7 @@ h5 {
 
 form {
     display: inline-block;
-    
+    width: 100%;
     }
 
 
