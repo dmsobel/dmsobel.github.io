@@ -248,8 +248,7 @@ input[type="text"] {
     margin-right: auto;
     width: 25%;
 	display: block;
-    
-    background-color: lightgray;
+    background-color: azure;
 }
 
 input[type="email"]{
