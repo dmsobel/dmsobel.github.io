@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+<head>
+  <title>Lab 3</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" media="screen" href="screen.css" />
+  <script src="scripts/formscript.js"></script>    
+</head>
+<body>
+    <div>
+  <form method="get" action="#null">
+    <h5> Join the sign post fanclub! </h5>
+        <br>
+      <fieldset>
+         <label for="email">Email</label>
+         <input type="email" name="email_data" require placeholder="test@example.com" id="email">
+            <br>
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone_number"  pattern="^\d{3}\d{3}\d{4}$" required placeholder="xxx-xxx-xxxx" id="phone">
+            <br>
+    
+          <label for="birth">Birthday</label>
+          <input type="date" required name="birth_day" id="birth">
+      
+          <input type="submit" value="Submit">
+      
+          </fieldset>
+	</form>
+    </div>
+</body>
+</html>
