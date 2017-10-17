@@ -232,7 +232,7 @@ textarea {
   border-color: azure;
 }
 
-input[type="date"] {
+input[type="text"] {
      /*-webkit-align-items: center;
      display: -webkit-inline-flex;*/
      font-family: monospace;
