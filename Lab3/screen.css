@@ -243,6 +243,15 @@ input[type="text"] {
      -webkit-padding-start: 1px;
 }
 
+#headimg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+	display: block;
+    
+    background-color: lightgray;
+}
+
 input[type="email"]{
     font-family: monospace;
     background-color: aliceblue;
