@@ -266,7 +266,7 @@ body {
     width: auto;
 }
 
-input[type="email"], input[type="name"]{
+input[type="email"], #name{
     font-family: 'Roboto', sans-serif;
     background-color: aliceblue;
     color: blue;
@@ -312,4 +312,67 @@ html {
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
 }
+
+
+@media screen and (min-width: 530px) {
+    
+[type="submit"]{
+ margin-left: auto;
+  margin-right: auto;
+  width: inherit;
+  margin-top: 12%;
+  font-family: sans-serif;
+  background-color: aquamarine; 
+  border-color: azure;
+}
+
+
+
+#headimg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+	display: block;
+    background-color: azure;
+}
+
+input[type="email"]{
+    font-family: monospace;
+    background-color: aliceblue;
+}
+
+input[type="tel"]{
+    font-family: monospace;
+    background-color: aliceblue;
+}
+    
+input {
+  display: block;
+  border-color: azure;
+}
+body{
+    background-color: mediumpurple;
+}
+label {
+  display: block;
+  background-color: blueviolet;
+  color: azure;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  padding-bottom: inherit
+}
+
+
+h5 {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    }
+
 }
