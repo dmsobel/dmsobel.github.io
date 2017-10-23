@@ -73,6 +73,7 @@ placeholder{
   padding: 8px;
 }
 
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -104,6 +105,7 @@ html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
+  
 }
 
 /**
@@ -135,6 +137,7 @@ button:-moz-focusring,
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+
 }
 
 /**
@@ -180,6 +183,7 @@ textarea {
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
+  -webkit-transform: scale(1.5);
 }
 
 /**
@@ -222,45 +226,121 @@ textarea {
 
 /* David Sobel */
 
+
+ @media screen and (orientation:portrait) { height: 100vh;
+            width: 100vw; }
+
+
+body {
+    background-color: lightgray;
+   
+}
+
 [type="submit"]{
- margin-left: auto;
+ margin-left: 25%;
   margin-right: auto;
-    width: inherit;
-  margin-top: 12%;
-  font-family: sans-serif;
-  background-color: aquamarine; 
-  border-color: azure;
+  vertical-align: baseline;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
 }
 
-input[type="date"] {
-     /*-webkit-align-items: center;
-     display: -webkit-inline-flex;*/
-     font-family: monospace;
-     background-color: aliceblue;
-     overflow: hidden;
-     padding: 0;
-     width: 200px;
-     -webkit-padding-start: 1px;
+#subdiv {
+    display: block;
+    margin-bottom: 30%;
+    width: 100%;
 }
 
-input[type="email"]{
-    font-family: monospace;
+#headimg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+	display: block;
+    
+    background-color: lightgray;
+}
+
+#mainformdiv {
+    width: auto;
+}
+
+input[type="email"], #name{
+    font-family: 'Roboto', sans-serif;
     background-color: aliceblue;
+    color: blue;
+    border-radius: 5px;
+    border:none;
+    max-width: 100%;
+    width: 100%;
+    display: block;
 }
 
-input[type="tel"]{
-    font-family: monospace;
-    background-color: aliceblue;
+
+label {
+  display: inline-block;
+  color: gray;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  padding-bottom: inherit;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: darkslategray;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    width: 100%;
+    }
+
+
+
+/*
+  Major Sixth Modular Scale:
+  http://www.modularscale.com/?22&px&1.667&web&text
+*/
+
+html {
+  font-size: 1.375em; /* 22px */
+  line-height: 1.182em; /* 26px / ~ 120% */
+  padding: 1.182em; /* 26px / ~ 120% */
+  text-rendering: optimizeLegibility;
+}
+
+
+@media screen and (min-width: 460px) {
+    
+[type="submit"]{
+ margin-left: 25%;
+  margin-right: auto;
+  vertical-align: baseline;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+}
+
+#subdiv {
+    display: block;
+    margin-bottom: 30%;
+    width: 100%;
+}
+
+#headimg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+	display: block;
+    background-color: azure;
 }
     
-input[id="fname"]{
-    background-color: aliceblue
-}
-
-input[id="lname"]{
-    background-color: aliceblue
-} 
-
 input {
   display: block;
   border-color: azure;
@@ -268,7 +348,8 @@ input {
 body{
     background-color: mediumpurple;
 }
-label {
+
+ label {
   display: block;
   background-color: blueviolet;
   color: azure;
@@ -278,17 +359,6 @@ label {
   padding-bottom: inherit
 }
 
-div {
-    display: inline-block;
-    padding: 30px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: azure;
-    border-radius: 2%;
-    border-color: black;
-}
 
 h5 {
     font-family: monospace;
@@ -301,18 +371,4 @@ form {
     display: inline-block;
     }
 
-@media screen and (min-width: 480px) {
-  label {
-    display: inline-block;
-    color: blueviolet;
-    background-color: azure;
-    margin-right: 5px;
-    font-size: 1.3em;
-  }
-    
-    
-  div {
-    display: block;
-    
-  }
 }

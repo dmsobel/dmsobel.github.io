@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
-  <title>David Sobel Project 1</title>
+  <title>Lab 4</title>
+  <link rel="shortcut icon" href="pictures/aami18-22-512.png"/>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="screen.css" />
-  <script src="scripts/formscript.js"></script>    
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans&amp;Open+Sans&amp;Roboto&amp;Roboto+Mono&amp;Slabo+27px&amp;Ubuntu&amp;Ubuntu+Condensed" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" media="screen" href="css/screen.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
+  <script src="site.js"></script>    
 </head>
 <body>
-    <div>
+    <div id="mainformdiv">
   <form method="get" action="#null">
+      <p><img src="pictures/aami18-22-512.png" alt="signpost" id="headimg"></p>
+      <br>
     <h5> Join the sign post fanclub! </h5>
         <br>
       <fieldset>
-          
-         <label for="first">First Name</label>
-         <input type="text" name="firstname" required placeholder="First Name" id=fname>
-            <br>
-         <label for="first">First Name</label>
-         <input type="text" name="lastname" required placeholder="Last Name" id=lname>
-            <br>
+          <label for="name">Name</label>
+          <input type="text" placeholder="First Last" id="name" required>
+          <br>
          <label for="email">Email</label>
-         <input type="email" name="email_data" required placeholder="test@example.com" id="email">
+         <input type="email" name="email_data" placeholder="test@example.com" id="email" required>
             <br>
-          <label for="phone">Phone Number</label>
-          <input type="tel" name="phone_number"  pattern="^\d{3}\d{3}\d{4}$" required placeholder="xxx-xxx-xxxx" id="phone">
-            <br>
-    
-          <label for="birth">Birthday</label>
-          <input type="date" required name="birth_day" id="birth">
-      
-          <input type="submit" value="Submit">
-      
-          </fieldset>
+          <label for="age-ver"><input type="checkbox" name="agecheck" id="age-ver" value="18"/> I verify that I am 18 years or older</label>
+         <div id="subdiv">
+          <input type="submit" value="Join">
+          </div>
+      </fieldset>
+             
 	</form>
-    </div>
+  </div>
 </body>
 </html>
