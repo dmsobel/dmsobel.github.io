@@ -232,7 +232,7 @@ textarea {
 
 
 body {
-    background-color: lightgray;
+    background-image: url(../pictures/formbgimg.png);
    
 }
 
@@ -258,7 +258,6 @@ body {
     margin-right: auto;
     width: 25%;
 	display: block;
-    
     background-color: lightgray;
 }
 
@@ -314,7 +313,7 @@ html {
 }
 
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 560px) {
     
 [type="submit"]{
  margin-left: 25%;
@@ -322,7 +321,7 @@ html {
   vertical-align: baseline;
   width: 50%;
   font-family: 'Roboto', sans-serif;
-  background-color: aliceblue;
+  background-color: a;
   border: none;
   border-radius: 5px;
 }
@@ -333,35 +332,54 @@ html {
     width: 100%;
 }
 
+    #signdiv {
+      
+      padding: 10px;
+        margin: -18px;
+      border-top-left-radius: 2%;    
+    }    
+    
 #headimg {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     width: 25%;
 	display: block;
-    background-color: azure;
+    background-image: url(../pictures/formbgimg.png);
 }
     
 input {
   display: block;
-  border-color: azure;
+  border-color: #B39DDB;
 }
 body{
-    background-color: mediumpurple;
+    background-image: url('../pictures/backgroundimg.png');
 }
 
  label {
   display: block;
-  background-color: blueviolet;
-  color: azure;
+  color: #EDE7F6;
   text-align: center;
   font-weight: bold;
-  font-family: monospace;
+  font-family: "Roboto", sans-serif;
   padding-bottom: inherit
 }
 
-
+#mainformdiv {
+    display: inline-block;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+    background-image: url('../pictures/formbgimg.png');
+    
+}
+}
+    
 h5 {
-    font-family: monospace;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
