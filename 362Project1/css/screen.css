@@ -226,6 +226,16 @@ textarea {
 
 /* David Sobel */
 
+::-webkit-input-placeholder {
+    color: lightgray;
+}
+:required {
+  outline: none;
+}
+
+input::-moz-placeholder{
+        color: dimgray;
+}
 
  @media screen and (orientation:portrait) { height: 100vh;
             width: 100vw; }
@@ -241,36 +251,42 @@ body {
   margin-right: auto;
   vertical-align: baseline;
   width: 50%;
+  color: gray;
   font-family: 'Roboto', sans-serif;
-  background-color: aliceblue;
+  background-color: #e0f2f1;
   border: none;
   border-radius: 5px;
 }
 
 #subdiv {
     display: block;
-    margin-bottom: 30%;
+    margin-top: 10%;
     width: 100%;
 }
 
 #headimg {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     width: 25%;
 	display: block;
-    background-color: lightgray;
 }
 
 #mainformdiv {
     width: auto;
 }
 
+#signdiv {
+    display: block;
+    margin-bottom: 10%;
+    }   
+
 input[type="email"], #name{
     font-family: 'Roboto', sans-serif;
-    background-color: aliceblue;
-    color: blue;
+    background-color: #e0f2f1;
     border-radius: 5px;
     border:none;
+    margin-bottom: 8%;
     max-width: 100%;
     width: 100%;
     display: block;
@@ -279,26 +295,26 @@ input[type="email"], #name{
 
 label {
   display: inline-block;
-  color: gray;
+  color: #64B5F6;
+  font-weight: 500;
   text-align: left;
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   padding-bottom: inherit;
 }
 
-h5 {
+h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    color: darkslategray;
+    color: #64B5F6;
     text-align: center;
+    font-weight: bold;
 }
 
 form {
     display: inline-block;
     width: 100%;
     }
-
-
 
 /*
   Major Sixth Modular Scale:
@@ -313,9 +329,11 @@ html {
 }
 
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 660px) {
+
     
 [type="submit"]{
+ 
  margin-left: 25%;
   margin-right: auto;
   vertical-align: baseline;
@@ -328,16 +346,9 @@ html {
 
 #subdiv {
     display: block;
-    margin-bottom: 30%;
     width: 100%;
-}
-
-    #signdiv {
-      
-      padding: 10px;
-        margin: -18px;
-      border-top-left-radius: 2%;    
-    }    
+    margin-bottom: 10%; 
+}  
     
 #headimg {
     margin-left: auto;
@@ -350,32 +361,47 @@ html {
     
 input {
   display: block;
-  border-color: #B39DDB;
+  margin-bottom: 8%;
+  outline: none;    
 }
+    
 body{
     background-image: url('../pictures/backgroundimg.png');
 }
 
  label {
   display: block;
-  color: #EDE7F6;
-  text-align: center;
-  font-weight: bold;
+  color: #64B5F6;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
   padding-bottom: inherit
 }
+    
+#subdiv {
+    display: block;
+    margin-top: 10%;
+    width: 100%;
+}
 
+#signdiv {
+    display: block;
+    margin-bottom: 10%;
+}    
+    
 #mainformdiv {
-    display: inline-block;
-    padding: 20px;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+ 
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 2%;
     background-image: url('../pictures/formbgimg.png');
+    box-shadow: 50px;
     
-}
 }
     
 h5 {
@@ -384,9 +410,19 @@ h5 {
     font-weight: bold;
     text-align: center;
 }
-
+    
+    
 form {
     display: inline-block;
     }
+
+   @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) {
+  body {
+   zoom: 0.8;
+   -moz-transform: scale(0.8);
+   -moz-transform-origin: 50% 0;
+   margin-top: 25%;
+} 
+  
 
 }
